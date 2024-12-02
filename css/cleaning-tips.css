@@ -1,0 +1,137 @@
+/* HERO SECTION */
+.hero {
+  padding: 4rem 0;
+}
+.hero__wrapper {
+  display: flex;
+  gap: 3rem;
+  height: 100%;
+}
+
+.hero__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero__img {
+  flex: 1;
+}
+
+/* BLOG POST SECTION */
+.blog {
+  padding: 3rem 0;
+}
+
+.blog__posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.blog__post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.blog__post img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.blog__post h3 {
+  color: var(--primary-blue);
+}
+
+.blog__post a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.8rem;
+}
+
+/* CTA */
+
+.cta {
+  padding: 3rem 0;
+  margin: 4rem 0 30rem 0;
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.cta__wrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.cta__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.cta__btn {
+  color: var(--white);
+  border-color: var(--white);
+}
+.cta__img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__img img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  /* HERO */
+  .hero {
+    height: 70vh;
+  }
+  .hero__wrapper {
+    flex-direction: column-reverse;
+  }
+  .hero__text {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__img img {
+    width: 80%;
+    height: 80%;
+  }
+  /* BLOG POST SECTION */
+  .blog__posts {
+    grid-template-columns: 1fr;
+  }
+  /* CTA */
+  .cta__wrapper {
+    flex-direction: column-reverse;
+  }
+  .cta__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta__img img {
+    width: 80%;
+    height: 80%;
+  }
+}

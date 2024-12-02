@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/services.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+
+    <!-- IONIC ICONS -->
+    <script defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Font Family: Lato -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper" data-aos="fade-down">
+                <a class="header__logo" href="index.html">
+                    <img class="header__logo-img" src="images/logo.png" alt="CleanNest logo">
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="index.html">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="about-us.html">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="services.html">Services</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="cleaning-tips.html">Cleaning Tips</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__cta">
+                    <a class="btn btn--primary" href="contact.html">Get started</a>
+                </div>
+
+                <div class="header__toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="hero" class="hero">
+        <div class="container">
+
+            <div class="hero__wrapper">
+                <div class="hero__text" data-aos="fade-up">
+                    <h1 class="hero__title primary-heading blue">
+                        Our Services
+                    </h1>
+                    <h3 class="hero__subtitle tertiary-heading">
+                        Custom Cleaning Solutions for Your Home & Office
+                    </h3>
+                </div>
+                <div class="hero__img" data-aos="fade-up">
+                    <img src="images/services.jpg" alt="hero image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services__text" data-aos="fade-up">
+                <h2 class="services__title secondary-heading blue">
+                    Our Services
+                </h2>
+                <p class="services__desc primary-paragraph">
+                    We offer a wide range of professional cleaning services tailored to meet your unique needs. Whether
+                    it's residential or commercial cleaning, our team ensures a spotless, healthy environment every
+                    time.
+                </p>
+                <div class="services__list">
+                    <div class="services__item" data-aos="fade-up">
+                        <div class="services__icon">
+                            <ion-icon name="today-outline"></ion-icon>
+                        </div>
+                        <h4 class="tertiary-heading services__title">
+                            Residential Cleaning
+                        </h4>
+                        <p class="primary-paragraph services__desc">
+                            Our residential cleaning service ensures your home stays spotless and welcoming. From
+                            dusting and vacuuming to deep-cleaning carpets and kitchen surfaces, we tackle every corner
+                            of your home with care and precision.
+                        </p>
+                    </div>
+                    <div class="services__item" data-aos="fade-up">
+                        <div class="services__icon">
+                            <ion-icon name="today-outline"></ion-icon>
+                        </div>
+                        <h4 class="tertiary-heading services__title">
+                            Commercial Cleaning
+                        </h4>
+                        <p class="primary-paragraph services__desc">
+                            Keep your business looking professional with our commercial cleaning service. We specialize
+                            in offices, retail spaces, and more, offering flexible scheduling to ensure your workspace
+                            is always clean and productive.
+                        </p>
+                    </div>
+                    <div class="services__item" data-aos="fade-up">
+                        <div class="services__icon">
+                            <ion-icon name="today-outline"></ion-icon>
+                        </div>
+                        <h4 class="tertiary-heading services__title">
+                            Office Cleaning
+                        </h4>
+                        <p class="primary-paragraph services__desc">
+                            Our office cleaning services help maintain a clean and organized work environment. From
+                            sanitizing desks to cleaning common areas, we ensure your workplace remains fresh and
+                            hygienic, allowing your team to focus on what matters most.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing__text" data-aos="fade-up">
+                <h2 class="pricing__title secondary-heading blue">
+                    Pricing
+                </h2>
+                <p class="pricing__desc primary-paragraph">
+                    We offer competitive and transparent pricing to suit all your cleaning needs. Whether you're looking
+                    for a one-time service or regular cleaning, our rates are clear, with no hidden fees. Rest assured,
+                    you'll receive top-quality service at an affordable price, designed to fit your budget
+                </p>
+            </div>
+
+            <div class="pricing-grid" >
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="plan-name">Basic Clean</div>
+                    <div class="plan-price">$99/month</div>
+                    <ul class="plan-features">
+                        <li class="primary-paragraph">Weekly cleaning</li>
+                        <li class="primary-paragraph">Vacuuming and mopping</li>
+                        <li class="primary-paragraph">Bathroom cleaning</li>
+                        <li class="primary-paragraph">Kitchen cleaning</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary cta--btn">Choose Plan</a>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up">
+                    <div class="plan-name">Deep Clean</div>
+                    <div class="plan-price">$199/month</div>
+                    <ul class="plan-features">
+                        <li class="primary-paragraph">All Basic Clean features</li>
+                        <li class="primary-paragraph">Bi-weekly deep cleaning</li>
+                        <li class="primary-paragraph">Window washing</li>
+                        <li class="primary-paragraph">Appliance cleaning</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary cta--btn">Choose Plan</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up"> 
+                    <div class="plan-name">Premium Clean</div>
+                    <div class="plan-price">$299/month</div>
+                    <ul class="plan-features">
+                        <li class="primary-paragraph">All Deep Clean features</li>
+                        <li class="primary-paragraph">Weekly deep cleaning</li>
+                        <li class="primary-paragraph">Laundry service</li>
+                        <li class="primary-paragraph">Carpet shampooing</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary cta--btn">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__wrapper">
+                <div class="cta__text" data-aos="fade-up">
+                    <h2 class="cta__title secondary-heading blue center">
+                        Subscribe to our newsletter
+                    </h2>
+                    <p class="cta__desc primary-paragraph center">
+                        Stay updated with the latest cleaning tips, special offers, and company news. Subscribe to our
+                        newsletter and never miss out on exclusive discounts, promotions, and exciting updates!
+                    </p>
+                </div>
+                <form class="cta__form" action="#" data-aos="fade-up">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn btn--primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="images/footer-bg.svg" alt="footer background image" class="footer__dec" aria-hidden="true">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <div class="footer__logo-wrapper">
+                        <a class="footer__logo" href="index.html">
+                            <img class="footer__logo-img" src="images/logo.png" alt="CleanNest logo">
+                        </a>
+                        <p class="footer__desc primary-paragraph">
+                            At Expert Cleaning, we take pride in delivering exceptional cleaning services tailored to
+                            your needs.
+                            From homes to offices, our expert team ensures every corner shines with freshness and care.
+                            Trust us to
+                            create clean, comfortable spaces that enhance your daily life
+                        </p>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Services</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Contact</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Residential Cleaning</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Commercial Cleaning</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Deep Cleaning</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Eco-Friendly Options</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Custom Plans</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Testimonials</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Careers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link primary-paragraph" href="index.html">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copyright">
+                        &copy; 2024 Expert Cleaning. All rights reserved
+                    </p>
+                    <div class="footer__socials">
+                        <a class="footer__social-link" href="https://facebook.com">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a class="footer__social-link" href="https://twitter.com">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a class="footer__social-link" href="https://instagram.com">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

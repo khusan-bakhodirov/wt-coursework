@@ -1,0 +1,159 @@
+/* HERO SECTION */
+
+.hero {
+    padding: 4rem 0;
+}
+.hero__wrapper {
+    display: flex;
+    gap: 3rem;
+    height: 100%;
+}
+
+.hero__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+h1 {
+    color: var(--primary-blue);
+}
+
+.hero__img {
+    flex: 1;
+}
+
+/* OUR STORY */
+.our-story {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.our-story__wrapper {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    height: fit-content;
+}
+
+.our-story__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.our-story__text p {
+    line-height: 2.3;
+    letter-spacing: 0.5px;
+    text-wrap: balance;
+}
+
+.our-story__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-story__img  img{
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 5rem;
+}
+
+/* OUR MISSION */
+.our-mission {
+    padding: 4rem 0;
+}
+
+table {
+    margin-top: 3rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+th {
+    background-color: #4a90e2;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* TEAM */
+.team {
+    padding: 4rem 0 28rem 0;
+    background-color: var(--light-gray);
+}
+
+.team__wrapper {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+    height: fit-content;
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.team__item figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__item img {
+    width: 15rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team__caption {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* HERO */
+    .hero {
+        height: 70vh;
+    }
+    .hero__wrapper {
+        flex-direction: column-reverse;
+    }
+    .hero__text {
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__img img {
+        width: 80%;
+        height: 80%;
+    }
+    /* OUR STORY */
+    .our-story__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .our-mission__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .team__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

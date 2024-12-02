@@ -1,0 +1,145 @@
+/* HERO SECTION */
+
+.hero {
+  padding: 4rem 0;
+}
+.hero__wrapper {
+  display: flex;
+  gap: 3rem;
+  height: 100%;
+}
+
+.hero__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero__img {
+  flex: 1;
+}
+/* FAQ SECTION */
+
+.faq {
+  padding: 3rem 0;
+}
+
+.faq__accordions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.faq__accordion {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-blue);
+  padding: 2rem; 
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq__accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.faq__accordion-header ion-icon {
+  font-size: 2rem;
+  color: var(--primary-blue);
+}
+.faq__accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+
+.faq__accordion-title {
+  margin-top: 2.5rem;
+}
+
+/* CTA */
+
+.cta {
+  padding: 3rem 0;
+  margin: 4rem 0 30rem 0;
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.cta__wrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.cta__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.cta__btn {
+  color: var(--white);
+  border-color: var(--white);
+}
+.cta__img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__img img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    /* HERO */
+    .hero {
+      height: 70vh;
+    }
+    .hero__wrapper {
+      flex-direction: column-reverse;
+    }
+    .hero__text {
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+    }
+    .hero__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero__img img {
+      width: 80%;
+      height: 80%;
+    }
+    /* FAQ */
+    .faq__accordion {
+      width: 100%;
+    }
+    /* CTA */
+    .cta__wrapper {
+      flex-direction: column-reverse;
+    }
+    .cta__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cta__img img {
+      width: 80%;
+      height: 80%;
+    }
+}
